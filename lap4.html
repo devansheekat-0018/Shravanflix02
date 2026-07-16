@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Lap 04 | SHRAVANFLIX</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+<body class="lap-page">
+
+
+
+<header class="navbar">
+
+
+<div class="brand">
+
+SHRAVAN<span>FLIX</span>
+
+</div>
+
+
+
+<nav>
+
+<a href="series.html">
+
+Episodes
+
+</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="lap-header">
+
+
+<p>
+
+LAP 04
+
+</p>
+
+
+<h1>
+
+THE REAL RACE
+
+</h1>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="lap-story">
+
+
+
+
+
+<div class="polaroid">
+
+
+<img src="image/photo11.jpg"
+alt="Lap 04 Memory">
+
+
+
+<p>
+
+The Real Race
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="story-card">
+
+
+
+<h2>
+
+OUR STORY
+
+</h2>
+
+
+
+
+<p>
+
+Every championship has a difficult race. A race that tests patience, trust, and the strength of the bond between two people. This was that chapter.
+
+The journey was no longer about just the exciting moments. It became about standing together through every situation, celebrating every small victory, and creating memories that would last forever.
+
+Like a Formula 1 team working perfectly behind the scenes, every little effort mattered. Every smile, every conversation, and every moment helped build something stronger.
+
+Lap 04 represents the stage where the journey became a true partnership. The race was no longer about starting — it was about reaching the finish line together.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<div class="memory-actions">
+
+
+<button onclick="likeMemory()">
+
+♡ Like
+
+</button>
+
+
+
+
+<button onclick="saveMemory()">
+
+＋ My List
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<section class="journey">
+
+
+<h2>
+
+YOUR JOURNEY
+
+</h2>
+
+
+
+<div class="progress-bar">
+
+
+<div class="progress-fill" style="width:80%;">
+
+80%
+
+</div>
+
+
+</div>
+
+
+
+<p>
+
+LAP 04 / 05
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="memories">
+
+
+<h2>
+
+MEMORIES
+
+</h2>
+
+
+
+<div class="memory-grid">
+
+
+<img src="image/photo11.jpg">
+
+
+<img src="image/photo6.jpg">
+
+
+<img src="image/photo2.jpg">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="next-section">
+
+
+
+<button 
+class="next-lap"
+onclick="goNextLap(5)"
+>
+
+🔒 Finish Story First
+
+</button>
+
+
+
+</section>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+window.onload=function(){
+
+    checkUnlock(5);
+
+}
+
+
+window.addEventListener("scroll", function(){
+
+
+    let story =
+    document.querySelector(".story-card");
+
+
+    if(story){
+
+
+        let position =
+        story.getBoundingClientRect();
+
+
+
+        if(position.bottom < window.innerHeight){
+
+
+            completeLap(4);
+
+
+        }
+
+
+    }
+
+
+});
+
+
+</script>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Lap 02 | SHRAVANFLIX</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+<body class="lap-page">
+
+
+
+<header class="navbar">
+
+
+<div class="brand">
+
+SHRAVAN<span>FLIX</span>
+
+</div>
+
+
+
+<nav>
+
+<a href="series.html">
+
+Episodes
+
+</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+<section class="lap-header">
+
+
+<p>
+
+LAP 02
+
+</p>
+
+
+<h1>
+
+THE FIRST TURN
+
+</h1>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="lap-story">
+
+
+
+
+
+<div class="polaroid">
+
+
+<img src="image/photo9.jpg"
+alt="Lap 02 Memory">
+
+
+
+<p>
+
+The First Turn
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="story-card">
+
+
+
+<h2>
+
+OUR STORY
+
+</h2>
+
+
+
+
+<p>
+
+Every race has a moment where everything starts feeling real. This was that turn. What began as curiosity slowly became a connection filled with small memories, late conversations, and moments that were impossible to forget.
+
+This lap was about understanding each other better. Every little detail became important, every conversation added another page to the story.
+
+The road was not always predictable, but that made the journey even more special. Like an F1 driver finding the perfect line on a difficult corner, we found our own rhythm.
+
+Lap 02 represents the moment when a simple beginning became something worth protecting.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<div class="memory-actions">
+
+
+<button onclick="likeMemory()">
+
+♡ Like
+
+</button>
+
+
+
+
+<button onclick="saveMemory()">
+
+＋ My List
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<section class="journey">
+
+
+<h2>
+
+YOUR JOURNEY
+
+</h2>
+
+
+
+<div class="progress-bar">
+
+
+<div class="progress-fill" style="width:40%;">
+
+40%
+
+</div>
+
+
+</div>
+
+
+
+<p>
+
+LAP 02 / 05
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="memories">
+
+
+<h2>
+
+MEMORIES
+
+</h2>
+
+
+
+<div class="memory-grid">
+
+
+<img src="image/photo9.jpg">
+
+
+<img src="image/photo4.jpg">
+
+
+<img src="image/photo2.jpg">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="next-section">
+
+
+
+<button 
+class="next-lap"
+onclick="goNextLap(3)"
+>
+
+🔒 Finish Story First
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+window.onload=function(){
+
+    checkUnlock(3);
+
+}
+
+
+window.addEventListener("scroll", function(){
+
+
+    let story =
+    document.querySelector(".story-card");
+
+
+    if(story){
+
+
+        let position =
+        story.getBoundingClientRect();
+
+
+
+        if(position.bottom < window.innerHeight){
+
+
+            completeLap(2);
+
+
+        }
+
+
+    }
+
+
+});
+
+
+</script>
+
+<script src="script.js"></script>
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
